@@ -10,7 +10,7 @@ namespace Microsoft.AspNetCore.Mvc.ModelBinding
     /// <summary>
     /// An <see cref="IValueProvider"/> for jQuery formatted query string data.
     /// </summary>
-    public class JQueryQueryStringValueProvider : JQueryFormValueProvider
+    public class JQueryQueryStringValueProvider : JQueryValueProvider
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="JQueryQueryStringValueProvider"/> class.

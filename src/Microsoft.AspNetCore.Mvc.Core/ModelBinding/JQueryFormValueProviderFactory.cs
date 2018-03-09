@@ -38,7 +38,7 @@ namespace Microsoft.AspNetCore.Mvc.ModelBinding
 
             var valueProvider = new JQueryFormValueProvider(
                 BindingSource.Form,
-                JQueryKeyValuePairNormalizerToMvc.GetValues(formCollection, formCollection.Count),
+                JQueryKeyValuePairNormalizer.GetValues(formCollection, formCollection.Count),
                 CultureInfo.CurrentCulture);
 
             context.ValueProviders.Add(valueProvider);

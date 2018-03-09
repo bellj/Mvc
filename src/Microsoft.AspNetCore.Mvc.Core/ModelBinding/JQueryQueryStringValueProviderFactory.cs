@@ -25,7 +25,7 @@ namespace Microsoft.AspNetCore.Mvc.ModelBinding
             {
                 var valueProvider = new JQueryQueryStringValueProvider(
                     BindingSource.Query,
-                    JQueryKeyValuePairNormalizerToMvc.GetValues(query, query.Count),
+                    JQueryKeyValuePairNormalizer.GetValues(query, query.Count),
                     CultureInfo.InvariantCulture);
 
                 context.ValueProviders.Add(valueProvider);
